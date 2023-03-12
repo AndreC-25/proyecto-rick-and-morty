@@ -1,0 +1,51 @@
+.div {
+   display: flex;
+   justify-content: center;
+}
+
+.container {
+   background-color: white;
+   width: fit-content;
+   border-radius: 10px;
+   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   display: flex;
+   flex-direction: column;
+}
+
+.divButton {
+   display: flex;
+   justify-content: right;
+}
+
+.closeButton { 
+   border: 1px solid black;
+   border-radius: 3px;
+   color: white;
+   background-color: red;
+   width: fit-content;
+   margin: 5px;
+   transition: 0.7s;
+}
+
+.closeButton:hover {
+   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.divImg {
+   position: relative;
+}   
+
+.nombre {
+   position: absolute;
+   bottom: -5px;
+   left: 5%;
+   font-size: 23px;
+   background-color: black;
+   color: white;
+   opacity: .8;
+}
+
+.divData {
+   display: flex;
+   justify-content: space-around;
+}

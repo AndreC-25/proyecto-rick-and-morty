@@ -1,3 +1,7 @@
+body {
+   background: url('./assets/img/rick-y-morty-en-el-espacio-9232.webp') no-repeat center center;
+}
+
 .App {
    text-align: center;
 }
