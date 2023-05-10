@@ -1,16 +1,20 @@
-import SearchBar from '../SearchBar/SearchBar'
-import styled from 'styled-components'
+import { NavLink } from 'react-router-dom';
+import SearchBar from '../SearchBar/SearchBar';
+import style from './NavBar.module.css';
 
 export default function Nav({onSearch}) {
-  const BarraNavegacion = styled.div`
-    background-color: rgb(15, 131, 131);
-    border: 1px solid rgb(22, 155, 155);
-    margin-bottom: 40px;
-  `; 
 
   return (
-    <BarraNavegacion>
+    <div className={style.divBar}>
+        <div className={style.divContent}>
+          <button className={style.button}>
+            <NavLink className={style.navLink} to='/'>Home</NavLink>
+          </button>
+          <button className={style.button}>
+            <NavLink className={style.navLink} to='/about'>About</NavLink>
+          </button>
+        </div>
         <SearchBar onSearch={onSearch}/>
-    </BarraNavegacion>
+    </div>
   )
 }

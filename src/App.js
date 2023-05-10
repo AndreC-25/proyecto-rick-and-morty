@@ -1,15 +1,11 @@
 import './App.css';
 import Nav from './components/Nav/Nav';
 import Cards from './components/Cards/Cards.jsx';
+import About from './components/About';
+import Detail from './components/Detail/Detail';
 import { useState } from 'react';
 import axios from 'axios';
-
-// const example = {
-//   name: 'Morty Smith',
-//   species: 'Human',
-//   gender: 'Male',
-//   image: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
-// };
+import { Routes, Route } from 'react-router-dom';
 
 function App () {
   const [characters, setCharacters] = useState([]);
@@ -36,8 +32,14 @@ function App () {
   return (
     <div className='App' style={{ padding: '25px' }}>
         <Nav onSearch={onSearch}/>
-        <Cards characters={characters} onClose={onClose}
-        />
+        <div>
+          <Routes>  
+            <Route path='/' element={<Cards characters={characters} onClose={onClose}
+            />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/detail/:id' element={<Detail />} />
+          </Routes>
+        </div>
     </div>
   )
 }

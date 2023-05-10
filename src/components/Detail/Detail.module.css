@@ -1,0 +1,25 @@
+.contenedorDetail {
+  display: flex;
+  color: black;
+  font-size: 30px;
+}
+
+.data {
+  background-color: white;
+  opacity: 0.4;
+  width: 50%;
+  text-align: center;
+}
+
+.divImagen {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imagen {
+  align-self: center;
+  border-radius: 175px;
+  height: 360px;
+}
