@@ -3,7 +3,6 @@ import { useState } from 'react';
 
 const DivSearch = styled.div`
    display: flex;
-   /* justify-content: right; */
    margin: 16px;
 `;
 

@@ -1,0 +1,30 @@
+.container {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 40%;
+  padding: 90px 5px;
+}
+
+.divInput {
+  margin: 40px 0px;
+}
+
+.input {
+  width: 200px;
+  height: 20px;
+}
+
+.boton {
+  margin: 40px 0px;
+  padding: 10px 20px;
+}
+
+.mensajeError {
+  color: red;
+  text-align: center;
+  font-weight: 1000;
+}
